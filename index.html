@@ -5,23 +5,95 @@
     <audio src ="C:\Users\USER1\Downloads\Rocking Chair - Unicorn Heads.mp3" autoplay loop></audio>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="typing.css" />
-    <audio src ="https://github.com/Yairi14/yairi14.github.io/blob/main/%E7%8C%AB%E3%81%AE%E9%B3%B4%E3%81%8D%E5%A3%B01.mp3" id="missaudio"></audio>
-    <audio src ="https://github.com/Yairi14/yairi14.github.io/blob/main/%E7%8C%AB%E3%81%AE%E9%B3%B4%E3%81%8D%E5%A3%B01.mp3" id="correctaudio"></audio>
+    <audio src ="C:\Users\USER1\Downloads\猫の鳴き声1.mp3" id="missaudio"></audio>
+    <audio src ="C:\Users\USER1\Downloads\猫の鳴き声1.mp3" id="correctaudio"></audio>
 <script>
     var wordlist = 
     ["nakagawa",
+    "honyaniiku",
+    "kotaewotou",
+    "shiwokaku",
+    "motinushi",
+    "mattakukinishinai",
+    "omotenideru",
+    "tuginohinoasa",
+    "yakunitatu",
+    "ousama",
+    "yousuwomiru",
+    "zasshinohyoushi",
+    "honnomokuzi",
+    "iezinituku",
+    "kaitenzushi",
+    "ikenwoiu",
+    "shouwatoheisei",
+    "shokubutunoshiyou",
+    "tizukigou",
+    "shokuziwosuru",
+    "zidoudoa",
+    "toujouzinbutu",
+    "toukousuru",
+    "sakumotuwosodateru",
+    "dourowohashiru",
+    "senshuten",
+    "ziyuukenkyuunosakuhin",
+    "shihaturesshaninoru",
+    "tegamidehentousuru",
+    "itidokirinozinsei",
+    "shugotojutugo",
+    "suimennisakuhana",
+    "hatumeikaninaru",
+    "kurumanobuhin",
+    "otoutonoshinchou",
+    "yuuzintotozanniiku",
+    "dekigoto",
+    "nihondaihyousenshu",
+    "bunshoumondai",
     "riri",
-    "sachi",
-    "naomi",
-    "nagisa"
+    "sachi"
     ];
     var wordlistJapanese = 
     ["中川",
+    "メモを取る",
+    "本屋に行く",
+    "答えを問う",
+    "詩を書く",
+    "持ち主",
+    "全く気にしない",
+    "表に出る",
+    "次の日の朝",
+    "役に立つ",
+    "王様",
+    "様子を見る",
+    "雑誌の表紙",
+    "本の目次",
+    "家路につく",
+    "回転寿司",
+    "意見を言う",
+    "昭和と平成",
+    "植物の子葉",
+    "地図記号",
+    "食事をする",
+    "自動ドア",
+    "登場人物",
+    "登校する",
+    "作物を育てる",
+    "道路を走る",
+    "先取点",
+    "自由研究の作品",
+    "始発列車に乗る",
+    "手紙で返答する",
+    "一度きりの人生",
+    "主語と述語",
+    "水面にさく花",
+    "発明家になる",
+    "車の部品",
+    "弟の身長",
+    "友人と登山に行く",
+    "出来事",
+    "日本代表選手",
+    "文章問題",
     "凛々",
-    "沙茅",
-    "直美",
-    "凪",
-    ];
+    "沙茅"];
     var time_limit = 90;
     var readytime = 3;
     var score;
@@ -98,7 +170,7 @@ document.onkeydown = function(e) {
         document.getElementById('correctaudio').pause();
         document.getElementById('correctaudio').currentTime = 0;
         document.getElementById('correctaudio').play();
-        word.innerHTML="<span style='color: red;'>"+wordlist[random].substr(0,char_num+1)+"</span>"+wordlist[random].substr(char_num+1,wordlist[random].length);
+        word.innerHTML="<span style='color: darkcyan;'>"+wordlist[random].substr(0,char_num+1)+"</span>"+wordlist[random].substr(char_num+1,wordlist[random].length);
         char_num++;
         if(newline == char_num){
            char_num = char_num + 4;
